@@ -10,7 +10,9 @@
   <!-- Google Fonts - Dancing Script cho chữ viết tay lãng mạn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Pacifico&family=Great+Vibes&display=swap"
+    rel="stylesheet">
   <title>Flowers 4 U</title>
 </head>
 
@@ -335,13 +337,14 @@
   <div class="letter-modal" id="letterModal">
     <div class="letter-content">
       <button class="close-letter" id="closeLetter">×</button>
-      <h2>Gửi em 🌹</h2>
+      <h2>Gửi các bạn nữ 🌹</h2>
       <div class="letter-text">
-        <p>Em có biết hôm nay 20/10 là ngày gì không?</p>
-        <p>Là ngày anh phải nhắc mình rằng: yêu em mỗi ngày là điều đúng đắn nhất anh từng làm.</p>
+        <p>Chúc mừng ngày Phụ nữ Việt Nam 20/10!</p>
+        <p>4user chúc các bạn luôn xinh đẹp, tự tin, hạnh phúc và thành công trong mọi lĩnh vực.</p>
+        <p>Hãy luôn tỏa sáng và là phiên bản tuyệt vời nhất của chính mình!</p>
       </div>
       <div class="letter-signature">
-        <p>Yêu em ❤️</p>
+        <p>Yêu thương & Trân trọng ❤️</p>
       </div>
     </div>
   </div>
@@ -353,18 +356,18 @@
     const closeLetter = document.getElementById('closeLetter');
 
     // Click vào phong bì để mở thư
-    envelope.addEventListener('click', function() {
+    envelope.addEventListener('click', function () {
       letterModal.style.display = 'flex';
       envelope.classList.add('opened');
     });
 
     // Click nút X để đóng thư
-    closeLetter.addEventListener('click', function() {
+    closeLetter.addEventListener('click', function () {
       letterModal.style.display = 'none';
     });
 
     // Click ra ngoài để đóng thư
-    letterModal.addEventListener('click', function(e) {
+    letterModal.addEventListener('click', function (e) {
       if (e.target === letterModal) {
         letterModal.style.display = 'none';
       }
@@ -377,7 +380,7 @@
     let moveTimeout;
 
     // Theo dõi vị trí chuột
-    document.addEventListener('mousemove', function(e) {
+    document.addEventListener('mousemove', function (e) {
       mouseX = e.pageX;
       mouseY = e.pageY;
 
@@ -389,7 +392,7 @@
 
       // Reset timeout
       clearTimeout(moveTimeout);
-      moveTimeout = setTimeout(function() {
+      moveTimeout = setTimeout(function () {
         isMoving = false;
       }, 100);
     });
@@ -415,7 +418,7 @@
       document.body.appendChild(heart);
 
       // Xóa sau khi animation kết thúc
-      setTimeout(function() {
+      setTimeout(function () {
         heart.remove();
       }, 1500);
     }
@@ -423,7 +426,7 @@
     // Giới hạn số lượng trái tim tạo ra (throttle)
     let lastHeartTime = 0;
     const originalCreateHeart = createHeart;
-    createHeart = function(x, y) {
+    createHeart = function (x, y) {
       const now = Date.now();
       if (now - lastHeartTime > 50) { // Tạo mỗi 50ms
         originalCreateHeart(x, y);
