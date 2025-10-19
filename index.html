@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Tặng nè</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Tặng nè</h1>
+
+        <div class="image-wrapper">
+            <img src="img/—Pngtree—judging thinking cat meme sticker_15251998.png" alt="Cute rabbit with flowers"
+                class="rabbit-image">
+        </div>
+
+        <p class="subtitle">Chạm vào ảnh</p>
+    </div>
+
+    <div class="button" style="display: none;">
+        <button>
+            <a href="flower.html">Click Meee</a>
+        </button>
+    </div>
+
+    <script>
+        // Lấy phần tử ảnh wrapper
+        const imageWrapper = document.querySelector('.image-wrapper');
+        const rabbitImage = document.querySelector('.rabbit-image');
+
+        // Thêm sự kiện click vào cả wrapper và ảnh
+        imageWrapper.addEventListener('click', function() {
+            // Chuyển sang trang flower.html
+            window.location.href = 'flower.html';
+        });
+
+        rabbitImage.addEventListener('click', function() {
+            // Chuyển sang trang flower.html
+            window.location.href = 'flower.html';
+        });
+    </script>
+</body>
+
+</html>

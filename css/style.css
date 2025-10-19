@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef9f9; /* Nền hồng nhạt giống ảnh */
+    overflow: hidden;
+}
+
+/* Container chứa toàn bộ nội dung */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Tiêu đề "Tặng nè" */
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #e75480; /* Màu hồng đậm */
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Khung hình vuông chứa ảnh con thỏ */
+.image-wrapper {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Shadow hồng giống ảnh - thêm animation */
+    box-shadow: 0 0 40px rgba(231, 84, 128, 0.3),
+                0 0 80px rgba(231, 84, 128, 0.15);
+
+    /* Border hồng nhạt */
+    border: 3px solid rgba(231, 84, 128, 0.2);
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    /* Animation sáng lên/nhạt dần */
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* Animation cho border và shadow sáng lên/nhạt dần */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(231, 84, 128, 0.2),
+                    0 0 40px rgba(231, 84, 128, 0.1),
+                    0 0 60px rgba(231, 84, 128, 0.05);
+        border-color: rgba(231, 84, 128, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(231, 84, 128, 0.5),
+                    0 0 80px rgba(231, 84, 128, 0.3),
+                    0 0 120px rgba(231, 84, 128, 0.15);
+        border-color: rgba(231, 84, 128, 0.6);
+    }
+}
+
+/* Ảnh con thỏ */
+.rabbit-image {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+/* Chữ "Chạm vào ảnh" */
+.subtitle {
+    font-size: 1.5rem;
+    color: #e75480;
+    margin-top: 25px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Nút cũ (ẩn đi) */
+.button {
+    display: none;
+}
+
+button {
+    background-color: #fc82bd;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e75480;
+    transform: scale(1.05);
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+    font-weight: 600;
+}
+
+/* Responsive cho mobile */
+@media screen and (max-width: 574px) {
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .image-wrapper {
+        width: 280px;
+        height: 280px;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+}
