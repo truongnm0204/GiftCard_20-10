@@ -1607,4 +1607,406 @@ body, body * {
   }
 }
 
+/* ============= RESPONSIVE DESIGN ============= */
+
+/* Tablet - màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+  body {
+    align-items: center;
+    padding-bottom: 120px;
+  }
+
+  .flowers {
+    transform: scale(0.7);
+    position: relative;
+    bottom: 0;
+  }
+
+  .flower__line {
+    height: 45vmin !important;
+  }
+
+  .flower--1 .flower__line {
+    height: 55vmin !important;
+  }
+
+  .flower--2 .flower__line {
+    height: 48vmin !important;
+  }
+
+  .long-g {
+    transform: scale(0.6) !important;
+  }
+
+  .flower__g-right .leaf {
+    width: 25vmin;
+    height: 40vmin;
+  }
+
+  .flower__g-front {
+    transform: rotate(-28deg) rotateY(30deg) scale(0.8);
+  }
+}
+
+/* Mobile lớn - màn hình nhỏ hơn 574px */
+@media screen and (max-width: 574px) {
+  body {
+    overflow-x: hidden;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .flowers {
+    transform: scale(0.5);
+    bottom: 0;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .flower {
+    bottom: 8vmin;
+  }
+
+  .flower__line {
+    height: 40vmin !important;
+    width: 1.2vmin;
+  }
+
+  .flower--1 .flower__line {
+    height: 50vmin !important;
+  }
+
+  .flower--2 .flower__line {
+    height: 42vmin !important;
+  }
+
+  .flower__leaf {
+    width: 6vmin;
+    height: 9vmin;
+  }
+
+  .flower__line__leaf {
+    --w: 5vmin;
+    --h: calc(var(--w) + 1.5vmin);
+  }
+
+  .long-g {
+    bottom: 20vmin;
+    transform: scale(0.5) !important;
+  }
+
+  .long-g--1 {
+    bottom: -5vmin;
+  }
+
+  .long-g--6 {
+    bottom: -25vmin;
+  }
+
+  .flower__grass {
+    bottom: 10vmin;
+    transform: scale(0.8) rotate(-48deg) rotateY(40deg);
+  }
+
+  .flower__g-long__bottom {
+    height: 40vmin;
+  }
+
+  .flower__g-right .leaf {
+    width: 20vmin;
+    height: 35vmin;
+    border-left-width: 1.5vmin;
+  }
+
+  .flower__g-right--2 .leaf {
+    height: 55vmin;
+  }
+
+  .flower__g-front {
+    transform: rotate(-28deg) rotateY(30deg) scale(0.7);
+    left: 1.5vmin;
+  }
+
+  .flower__g-front__line {
+    height: 15vmin;
+  }
+
+  .flower__g-front__leaf {
+    width: 7vmin;
+    height: 7vmin;
+  }
+
+  .flower__g-fr .leaf {
+    width: 22vmin;
+    height: 38vmin;
+    border-left-width: 1.5vmin;
+  }
+}
+
+/* Mobile nhỏ - màn hình nhỏ hơn 380px */
+@media screen and (max-width: 380px) {
+  body {
+    padding-bottom: 80px;
+  }
+
+  .flowers {
+    transform: scale(0.4);
+    bottom: 0;
+    position: relative;
+  }
+
+  .flower {
+    bottom: 5vmin;
+  }
+
+  .flower__line {
+    height: 35vmin !important;
+    width: 1vmin;
+  }
+
+  .flower--1 .flower__line {
+    height: 45vmin !important;
+  }
+
+  .flower--2 .flower__line {
+    height: 38vmin !important;
+  }
+
+  .flower__leaf {
+    width: 5vmin;
+    height: 7vmin;
+  }
+
+  .flower__line__leaf {
+    --w: 4vmin;
+    --h: calc(var(--w) + 1vmin);
+  }
+
+  .long-g {
+    bottom: 15vmin;
+    transform: scale(0.4) !important;
+  }
+
+  .long-g--1 {
+    bottom: -8vmin;
+  }
+
+  .long-g--6 {
+    bottom: -30vmin;
+  }
+
+  .flower__grass {
+    bottom: 8vmin;
+    transform: scale(0.6) rotate(-48deg) rotateY(40deg);
+  }
+
+  .flower__g-long__bottom {
+    height: 35vmin;
+  }
+
+  .flower__g-right .leaf {
+    width: 18vmin;
+    height: 30vmin;
+    border-left-width: 1.2vmin;
+  }
+
+  .flower__g-right--2 .leaf {
+    height: 45vmin;
+  }
+
+  .flower__g-front {
+    transform: rotate(-28deg) rotateY(30deg) scale(0.6);
+    left: 1vmin;
+    bottom: 4vmin;
+  }
+
+  .flower__g-front__line {
+    height: 12vmin;
+  }
+
+  .flower__g-front__leaf {
+    width: 6vmin;
+    height: 6vmin;
+  }
+
+  .flower__g-fr .leaf {
+    width: 18vmin;
+    height: 32vmin;
+    border-left-width: 1.2vmin;
+  }
+
+  .envelope-wrapper {
+    bottom: 50px;
+  }
+
+  .envelope {
+    width: 85px;
+    height: 56px;
+  }
+
+  .envelope-body {
+    width: 85px;
+    height: 56px;
+  }
+
+  .heart-seal {
+    font-size: 20px;
+  }
+
+  .envelope-flap,
+  .envelope-top {
+    border-left-width: 42.5px;
+    border-right-width: 42.5px;
+  }
+
+  .envelope-flap {
+    border-top-width: 36px;
+  }
+
+  .envelope-top {
+    border-bottom-width: 36px;
+  }
+
+  .letter-content {
+    padding: 25px 20px;
+  }
+
+  .letter-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .letter-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .letter-text p {
+    margin-bottom: 15px;
+  }
+
+  .letter-signature {
+    font-size: 1.1rem;
+  }
+
+  .close-letter {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Màn hình lớn - desktop */
+@media screen and (min-width: 1200px) {
+  .flowers {
+    transform: scale(1);
+  }
+
+  .letter-content {
+    max-width: 600px;
+    padding: 50px 45px;
+  }
+
+  .letter-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .letter-text {
+    font-size: 1.25rem;
+    line-height: 2.1;
+  }
+
+  .letter-signature {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive cho hiệu ứng chuột trên mobile */
+@media screen and (max-width: 768px) {
+  /* Hiển thị con trỏ chuột trên mobile/tablet */
+  body, body * {
+    cursor: auto !important;
+  }
+
+  /* Giảm kích thước trái tim trên mobile */
+  .mouse-heart {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mouse-heart {
+    font-size: 14px;
+  }
+}
+
+/* Landscape mode cho mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  body {
+    padding-bottom: 60px;
+  }
+
+  .flowers {
+    transform: scale(0.4);
+    position: relative;
+    bottom: 0;
+  }
+
+  .envelope-wrapper {
+    bottom: 30px;
+  }
+
+  .envelope {
+    width: 80px;
+    height: 53px;
+  }
+
+  .envelope-body {
+    width: 80px;
+    height: 53px;
+  }
+
+  .heart-seal {
+    font-size: 18px;
+  }
+
+  .envelope-flap,
+  .envelope-top {
+    border-left-width: 40px;
+    border-right-width: 40px;
+  }
+
+  .envelope-flap {
+    border-top-width: 33px;
+  }
+
+  .envelope-top {
+    border-bottom-width: 33px;
+  }
+
+  .letter-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .letter-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .letter-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .letter-signature {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
